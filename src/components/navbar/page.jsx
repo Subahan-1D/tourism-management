@@ -1,5 +1,4 @@
 "use client";
-
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
@@ -90,8 +89,10 @@ const Navbar = () => {
           <ul className="menu menu-horizontal px-3 space-x-6">{navLinks}</ul>
         </div>
         <div className="navbar-end">
-          <button className="btn bg-red-600 text-white hover:bg-red-700 px-6 py-2 rounded-full shadow-lg transition duration-300">
-            Login
+          <button className={`text-lg btn btn-outline border-b-4 font-medium transition duration-300 ${
+          pathname === "/signin" ? "text-red-600" : "hover:text-red-600"
+        }`}>
+            <Link href='/signin'>Login</Link>
           </button>
         </div>
       </div>

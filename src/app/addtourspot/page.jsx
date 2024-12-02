@@ -1,11 +1,13 @@
-import React from 'react';
+
+import InputPage from "@/components/Input/page";
+import React from "react";
 
 const AddTourSpot = () => {
-    return (
-        <div>
-            <h3>This is add tour page</h3>
-        </div>
-    );
+  return (
+    <div>
+      <InputPage></InputPage>
+    </div>
+  );
 };
 
 export default AddTourSpot;
