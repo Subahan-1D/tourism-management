@@ -21,12 +21,16 @@ const nextConfig = {
       "res.cloudinary.com",
       "i.ibb.co.com",
       "ibb.co.com",
-      "lh3.googleusercontent.com"
+      "lh3.googleusercontent.com",
     ],
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'lh3.googleusercontent.com',
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+      },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
       },
     ],
   },
